@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — マチアプ写真診断</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; line-height: 1.75; color: #1A1A21; background: #FCFBF9; }
+  h1 { font-size: 22px; border-bottom: 1px solid #EBE9E8; padding-bottom: 12px; margin-bottom: 24px; }
+  h2 { font-size: 15px; margin-top: 28px; color: #21212A; }
+  p, li { font-size: 14px; color: #383842; }
+  ul { padding-left: 20px; }
+  footer { margin-top: 48px; font-size: 12px; color: #6B6B78; border-top: 1px solid #EBE9E8; padding-top: 16px; }
+  a { color: #C8801A; }
+</style>
+</head>
+<body>
+<h1>プライバシーポリシー</h1>
+
+<p>本ポリシーは、本アプリ「マチアプ写真診断 (MatchAppPhotoDiagnose)」(以下「本アプリ」) における個人情報および利用者データの取扱いについて定めるものです。本アプリは利用者のプライバシーを最大限尊重し、最小限のデータ取扱いを基本方針としています。</p>
+
+<h2>取得する情報</h2>
+<p>本アプリは以下の情報を取り扱います。</p>
+<ul>
+  <li><strong>写真ライブラリへのアクセス</strong>: 診断対象の写真選択のために使用します。アクセスは利用者の明示的な許可が必要です。</li>
+  <li><strong>購入情報</strong>: 本気診断パックの購入有無および残クレジット数は、端末内 (UserDefaults) にのみ保存されます。</li>
+  <li><strong>広告識別子 (IDFA)</strong>: 利用者が App Tracking Transparency の許諾ダイアログで許可した場合に限り、広告配信パートナー (Google AdMob) によって関連性の高い広告表示と効果測定のために使用されます。許可しなかった場合は使用しません。</li>
+</ul>
+<p>本アプリは氏名・メールアドレス・電話番号・住所などの個人を識別する情報を取得しません。アカウント登録も不要です。</p>
+
+<h2>写真データの取扱い</h2>
+<p>利用者が選択した写真は、診断のために前処理 (リサイズ・圧縮) された上で、Google が提供する Gemini API に HTTPS で送信されます。</p>
+<ul>
+  <li>送信されるのは前処理後の画像データのみで、位置情報・撮影日時等の Exif メタデータは含めません。</li>
+  <li>Gemini API への送信および同 API におけるデータの取扱いについては、Google のプライバシーポリシー (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) が適用されます。</li>
+  <li>運営者は写真データを自社サーバーには保存しません。診断完了後、送信した画像は API レスポンス受領後にメモリ上から破棄されます。</li>
+</ul>
+
+<h2>広告について</h2>
+<p>無料診断では Google AdMob のリワード広告およびバナー広告を表示することがあります。AdMob は広告配信のために広告識別子 (IDFA) や端末情報を利用する場合があります。詳細は Google の広告ポリシー (<a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>) をご参照ください。</p>
+<p>本気診断パックを購入された利用者には、当該残クレジットを利用する診断において広告を表示しません。</p>
+
+<h2>第三者提供</h2>
+<p>運営者は、利用者から取得した情報を以下の場合を除き、第三者に提供しません。</p>
+<ul>
+  <li>利用者本人の同意がある場合</li>
+  <li>法令に基づき開示が必要な場合</li>
+  <li>Gemini API・AdMob 等、本アプリの機能提供に必要な範囲で外部サービスに送信する場合</li>
+</ul>
+
+<h2>データの削除</h2>
+<p>本アプリをアンインストールすることで、端末に保存された購入クレジット情報・診断履歴・各種設定はすべて削除されます。設定画面からも個別にリセットが可能です。</p>
+
+<h2>お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、App Store の本アプリページに記載のサポート連絡先、または <a href="./support.html">サポートページ</a> をご参照ください。</p>
+
+<h2>ポリシーの改定</h2>
+<p>本ポリシーは、法令の改正やサービス内容の変更に応じて改定されることがあります。改定後はアプリ内および本ページに表示された時点から効力を生じます。</p>
+
+<footer>最終更新日: 2026年5月30日 / 運営: Appricot Co., Ltd.</footer>
+</body>
+</html>

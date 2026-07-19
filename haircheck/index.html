@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - 髪診断AI ヘアチェック</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f7f5fb;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        h1 { font-size: 1.4em; color: #3a2e5c; text-align: center; margin-bottom: 8px; }
+        .app-name { text-align: center; font-size: 0.9em; color: #6e6096; margin-bottom: 24px; }
+        .updated { text-align: center; font-size: 0.8em; color: #999; margin-bottom: 32px; }
+        h2 { font-size: 1.1em; color: #3a2e5c; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 2px solid #e8e2f8; }
+        h3 { font-size: 0.95em; color: #554780; margin: 16px 0 6px; }
+        p { margin-bottom: 12px; font-size: 0.92em; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { font-size: 0.92em; margin-bottom: 4px; }
+        .highlight {
+            background: #f2eefb;
+            border-left: 3px solid #8c73d9;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-size: 0.9em;
+        }
+        .contact {
+            text-align: center; margin-top: 32px; padding-top: 20px;
+            border-top: 1px solid #eee; font-size: 0.85em; color: #888;
+        }
+        a { color: #8c73d9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>プライバシーポリシー</h1>
+        <p class="app-name">髪診断AI ヘアチェック</p>
+        <p class="updated">最終更新日: 2026年7月19日</p>
+
+        <p>本プライバシーポリシーは、「髪診断AI ヘアチェック」（以下「本アプリ」）におけるユーザー情報の取り扱いについて定めるものです。本アプリをご利用いただく前に、本ポリシーをよくお読みください。</p>
+
+        <h2>1. 収集する情報</h2>
+
+        <h3>1-1. 写真データ</h3>
+        <p>本アプリは、髪の状態の分析を目的として、ユーザーがカメラで撮影した写真またはフォトライブラリから選択した写真（以下「写真データ」）を収集します。</p>
+        <div class="highlight">
+            <strong>重要:</strong> 本アプリは顔認識・顔検出技術（Apple Vision Framework等）は使用しておらず、フェイスマップ、深度データ、生体認証データなどは一切収集しません。収集するのは髪の分析に使用する写真画像のみです。
+        </div>
+
+        <h3>1-2. 髪プロフィール情報（任意）</h3>
+        <p>美髪+プラン（有料プラン）をご利用の場合、より正確な診断のために以下の情報を任意でご登録いただけます：</p>
+        <ul>
+            <li>髪の長さ</li>
+            <li>カラー・パーマの履歴</li>
+            <li>年代</li>
+            <li>性別</li>
+            <li>髪の悩み</li>
+            <li>普段のヘアケア</li>
+        </ul>
+
+        <h3>1-3. 診断結果データ</h3>
+        <p>AI分析により生成された髪スコア（ツヤ、うるおい、髪の健康度、まとまり、ボリューム、色ツヤ、髪質タイプ、ダメージレベル）およびアドバイステキストを保存します。</p>
+
+        <h2>2. 情報の利用目的</h2>
+        <p>収集した情報は、以下の目的にのみ使用します：</p>
+        <ul>
+            <li><strong>髪状態の分析:</strong> 写真データをAI（OpenAI API）に送信し、髪状態のスコアリングとアドバイスの生成を行います</li>
+            <li><strong>診断履歴の管理:</strong> 過去の診断結果をデバイス上に保存し、髪状態の変化を追跡できるようにします</li>
+            <li><strong>パーソナライズ:</strong> 髪プロフィール情報を基に、個人に最適化されたアドバイスを提供します（美髪+プランのみ）</li>
+        </ul>
+        <div class="highlight">
+            写真データを広告ターゲティング、ユーザー識別、顔認識、その他分析以外の目的に使用することは一切ありません。
+        </div>
+
+        <h2>3. 第三者への提供</h2>
+
+        <h3>3-1. OpenAI（AI分析）</h3>
+        <p>髪の分析のため、写真データをOpenAI社のAPI（api.openai.com）に送信します。OpenAIはAPIリクエストで送信されたデータをモデルのトレーニングに使用しません（OpenAI API Data Usage Policy に基づく）。送信されたデータはAPI処理完了後、OpenAIのデータ保持ポリシーに従い最大30日間保持された後、削除されます。</p>
+
+        <h3>3-2. Google AdMob（広告配信）</h3>
+        <p>無料プランでは、Google AdMob SDKを使用して広告を配信します。AdMobは広告配信に必要な情報（デバイス識別子等）を収集する場合がありますが、写真データはAdMobと共有されません。</p>
+
+        <h3>3-3. Apple（アプリ内課金）</h3>
+        <p>美髪+プランの購入処理は、AppleのStoreKitを通じて行われます。課金に関する情報はAppleが管理します。</p>
+
+        <p><strong>上記以外の第三者に写真データを共有・販売・提供することはありません。</strong></p>
+
+        <h2>4. データの保存場所</h2>
+        <ul>
+            <li><strong>写真データ:</strong> ユーザーのデバイス内（アプリのDocumentsディレクトリ）にJPEG形式で保存されます。iCloudへの自動同期は行いません。</li>
+            <li><strong>診断結果:</strong> ユーザーのデバイス内にJSON形式で保存されます。</li>
+            <li><strong>髪プロフィール:</strong> ユーザーのデバイス内に保存されます。</li>
+            <li><strong>サーバー:</strong> 本アプリは独自のサーバーを持たず、ユーザーデータをサーバーに恒久的に保存することはありません。</li>
+        </ul>
+
+        <h2>5. データの保持期間</h2>
+        <ul>
+            <li><strong>デバイス上の写真・診断結果:</strong> ユーザーが手動で削除するまで保持されます。アプリ内の髪カレンダーから、個別または一括で削除できます。</li>
+            <li><strong>OpenAI APIに送信されたデータ:</strong> OpenAIのデータ保持ポリシーに従い、APIリクエスト処理後、最大30日間保持された後に削除されます。</li>
+            <li><strong>アプリの削除:</strong> アプリを削除すると、デバイス上のすべてのデータ（写真、診断結果、プロフィール）が完全に削除されます。</li>
+        </ul>
+
+        <h2>6. ユーザーの権利</h2>
+        <p>ユーザーは以下の権利を有します：</p>
+        <ul>
+            <li><strong>データの閲覧:</strong> アプリ内の髪カレンダーで、すべての診断結果と保存された写真を閲覧できます</li>
+            <li><strong>データの削除:</strong> アプリ内から個別または一括でデータを削除できます</li>
+            <li><strong>写真撮影の拒否:</strong> カメラやフォトライブラリへのアクセス許可をいつでも拒否・取り消すことができます（iOS設定から変更可能）</li>
+            <li><strong>プロフィール情報のリセット:</strong> 髪プロフィール情報はいつでもリセットできます</li>
+        </ul>
+
+        <h2>7. 通知</h2>
+        <p>本アプリは、診断の継続をお手伝いするためのリマインダー通知（ローカル通知）を送信することがあります。通知はユーザーの許可がある場合のみ送信され、iOS設定からいつでもオフにできます。通知のためにユーザーデータが外部に送信されることはありません。</p>
+
+        <h2>8. セキュリティ</h2>
+        <ul>
+            <li>API通信はHTTPS（TLS暗号化）により保護されます</li>
+            <li>データはユーザーのデバイス内にのみ保存され、外部サーバーに恒久的に保存されることはありません</li>
+            <li>APIキーはKeychainにより安全に管理されます</li>
+        </ul>
+
+        <h2>9. 医療に関する免責</h2>
+        <div class="highlight">
+            本アプリの診断は医療行為ではありません。AIによる画像解析の結果は参考情報であり、医学的な診断・治療・予防を目的とするものではありません。頭皮や毛髪の症状が気になる場合は、皮膚科専門医にご相談ください。
+        </div>
+
+        <h2>10. 未成年者のプライバシー</h2>
+        <p>本アプリは13歳未満のお子様を対象としておらず、13歳未満のお子様から意図的に情報を収集することはありません。13歳未満のお子様が本アプリを使用していることが判明した場合は、お問い合わせください。</p>
+
+        <h2>11. プライバシーポリシーの変更</h2>
+        <p>本ポリシーは、法令の変更やサービス内容の変更に伴い、事前の通知なく変更される場合があります。重要な変更がある場合は、アプリ内でお知らせします。最新のポリシーは常にこのページでご確認いただけます。</p>
+
+        <h2>12. お問い合わせ</h2>
+        <p>本ポリシーに関するご質問やデータの取り扱いに関するお問い合わせは、以下までご連絡ください：</p>
+
+        <div class="contact">
+            <p>開発者: appricot</p>
+            <p>メール: <a href="mailto:contact@appricot.jp">contact@appricot.jp</a></p>
+            <p style="margin-top:8px"><a href="./terms/">利用規約はこちら</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -77,13 +77,26 @@
             color: #888;
         }
         a { color: #d97760; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0 14px;
+            font-size: 0.86em;
+        }
+        th, td {
+            border: 1px solid #eadad3;
+            padding: 6px 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th { background: #fef3ef; color: #5a3a30; font-weight: 600; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>プライバシーポリシー</h1>
         <p class="app-name">肌診断AI スキンチェック</p>
-        <p class="updated">最終更新日: 2026年10月1日</p>
+        <p class="updated">最終更新日: 2026年10月24日</p>
 
         <p>本プライバシーポリシーは、「肌診断AI スキンチェック」（以下「本アプリ」）におけるユーザー情報の取り扱いについて定めるものです。本アプリをご利用いただく前に、本ポリシーをよくお読みください。</p>
 
@@ -127,16 +140,40 @@
 
         <h3>3-1. OpenAI（AI分析）</h3>
         <p>肌分析のため、顔写真データを当社のサーバー（Cloudflare Workers）を経由してOpenAI社のAPI（api.openai.com）に送信します。美肌+プランをご利用で肌プロフィールを登録している場合は、<strong>年代・性別・使用中のケア</strong>も一緒に送信します。</p>
-        <p>当社サーバーはリクエストを中継するだけで、写真・診断結果・肌プロフィールを保存しません。OpenAIはAPIリクエストで送信されたデータをモデルのトレーニングに使用しません（OpenAI API Data Usage Policy に基づく）。送信されたデータはAPI処理完了後、OpenAIのデータ保持ポリシーに従い最大30日間保持された後、削除されます。</p>
+        <p>当社サーバーはリクエストを中継するだけで、写真・診断結果・肌プロフィールを保存しません。OpenAIはAPIリクエストで送信されたデータをモデルのトレーニングに使用しません。送信されたデータは、OpenAIのデータ保持ポリシーに従い、不正利用の監視のため原則として最長30日間保持された後、削除されます（法令で保持が必要な場合などは、これより長くなることがあります）。</p>
+        <p>OpenAI社は米国の事業者です。外国にある第三者への提供については「3-4. 外国にある第三者への提供（米国）」をご覧ください。</p>
         <div class="highlight">
-            <strong>旧バージョン（1.1以前）をお使いの場合:</strong> バージョン1.1以前の本アプリは、当社サーバーを経由せず、顔写真データ（美肌+プランでは年代・性別・使用中のケアも含む）をデバイスから直接OpenAIのAPIに送信します。OpenAIでの取り扱い（トレーニングに使用しない・最大30日間の保持）は上記と同じです。最新バージョンへのアップデートをおすすめします。
+            <strong>旧バージョン（1.1以前）をお使いの場合:</strong> バージョン1.1以前の本アプリは、当社サーバーを経由せず、顔写真データ（美肌+プランでは年代・性別・使用中のケアも含む）をデバイスから直接OpenAIのAPIに送信します。OpenAIでの取り扱い（トレーニングに使用しない・原則として最長30日間の保持）は上記と同じです。最新バージョンへのアップデートをおすすめします。
         </div>
 
         <h3>3-2. Google AdMob（広告配信）</h3>
-        <p>無料プランでは、Google AdMob SDKを使用して広告を配信します。AdMobは広告配信に必要な情報（デバイス識別子等）を収集する場合がありますが、顔写真データ・診断結果・肌プロフィールはAdMobと共有されません。AdMobによる情報の取り扱いは<a href="https://policies.google.com/privacy" target="_blank">Googleのプライバシーポリシー</a>をご確認ください。</p>
+        <p>無料プランでは、Google AdMob SDKを使用して広告（バナー広告と、診断結果の前の動画広告）を配信します。広告の配信のため、本アプリに組み込んだAdMob SDKが、以下の情報をGoogleに送信します。顔写真データ・診断結果・肌プロフィールはAdMobと共有されません。美肌+プランでは広告を表示しません。</p>
+        <table>
+            <tr><th>送信先</th><th>送信される情報</th><th>利用目的</th></tr>
+            <tr>
+                <td>Google（Google AdMob）</td>
+                <td>
+                    おおよその位置情報（IPアドレスから推定）<br>
+                    デバイスの識別子<br>
+                    広告データ（表示・タップした広告など）<br>
+                    アプリの操作データ<br>
+                    クラッシュデータ・パフォーマンスデータなどの診断データ
+                </td>
+                <td>広告の配信・効果の測定、不正の防止、分析</td>
+            </tr>
+        </table>
+        <p>AdMobによる情報の取り扱いは<a href="https://policies.google.com/privacy" target="_blank">Googleのプライバシーポリシー</a>と<a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>をご確認ください。</p>
 
         <h3>3-3. Apple（アプリ内課金）</h3>
         <p>美肌+プランの購入処理は、AppleのStoreKitを通じて行われます。課金に関する情報はAppleが管理します。</p>
+
+        <h3>3-4. 外国にある第三者への提供（米国）</h3>
+        <p>本アプリは、肌分析のため、顔写真データ（美肌+プランでは「3-1」に記載の肌プロフィールの項目も）を、外国にある第三者である米国のOpenAI社に提供します。個人情報の保護に関する法律に基づき、以下をお知らせします。</p>
+        <ul>
+            <li><strong>提供先の国:</strong> アメリカ合衆国（OpenAI社）</li>
+            <li><strong>その国の個人情報の保護に関する制度:</strong> 米国には、日本の個人情報保護法に相当する連邦の包括的な法律はなく、電子通信プライバシー法（ECPA）など分野ごとの連邦法や、州法（カリフォルニア州消費者プライバシー法（CCPA）など）によって個人情報が保護されています。米国はAPEC越境プライバシールール（CBPR）システムに参加しています（2012年7月）。詳しくは<a href="https://www.ppc.go.jp/enforcement/infoprovision/laws/offshore_report_america/" target="_blank">個人情報保護委員会による調査（2021年10月時点）</a>をご覧ください。</li>
+            <li><strong>提供先が講じている個人情報の保護のための措置:</strong> OpenAI社は、APIで送信されたデータをAIモデルのトレーニングに使用しません。不正利用の監視のためのデータは原則として最長30日間で削除されます（法令で保持が必要な場合などは、これより長くなることがあります）。保存時はAES-256、通信時はTLS 1.2以上で暗号化され、APIはSOC 2 Type 2の監査を受けています（<a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank">OpenAI: Your data</a>、<a href="https://openai.com/enterprise-privacy/" target="_blank">OpenAI: Enterprise privacy</a>）。</li>
+        </ul>
 
         <p><strong>上記以外の第三者に顔写真データを共有・販売・提供することはありません。</strong></p>
 
@@ -151,7 +188,7 @@
         <h2>5. データの保持期間</h2>
         <ul>
             <li><strong>デバイス上の顔写真・診断結果:</strong> ユーザーが手動で削除するまで保持されます。アプリ内の履歴画面から1件ずつ削除できます。すべてをまとめて消す場合はアプリを削除してください。</li>
-            <li><strong>OpenAI APIに送信されたデータ:</strong> OpenAIのデータ保持ポリシーに従い、APIリクエスト処理後、最大30日間保持された後に削除されます。</li>
+            <li><strong>OpenAI APIに送信されたデータ:</strong> OpenAIのデータ保持ポリシーに従い、不正利用の監視のため原則として最長30日間保持された後に削除されます（法令で保持が必要な場合などを除く）。</li>
             <li><strong>アプリの削除:</strong> アプリを削除すると、デバイス上のすべてのデータ（写真、診断結果、プロフィール）が完全に削除されます。</li>
         </ul>
 

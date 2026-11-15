@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - お部屋プランナー</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif; line-height: 1.8; color: #2B2A28; background: #F6F2EA; padding: 20px; }
+        .container { max-width: 700px; margin: 0 auto; background: #FCFAF6; border: 1px solid #DCD5C8; border-radius: 6px; padding: 32px 24px; }
+        h1 { font-size: 1.4em; text-align: center; margin-bottom: 8px; font-family: 'Hiragino Mincho ProN', serif; }
+        .app-name { text-align: center; font-size: 0.9em; color: #5E6B3F; margin-bottom: 24px; }
+        .updated { text-align: center; font-size: 0.8em; color: #6E6A63; margin-bottom: 32px; }
+        h2 { font-size: 1.1em; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #2B2A28; font-family: 'Hiragino Mincho ProN', serif; }
+        h3 { font-size: 0.95em; color: #5E6B3F; margin: 16px 0 6px; }
+        p { margin-bottom: 12px; font-size: 0.92em; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { font-size: 0.92em; margin-bottom: 4px; }
+        .highlight { background: #E7E9DC; border-left: 3px solid #5E6B3F; padding: 12px 16px; margin: 12px 0; font-size: 0.9em; }
+        .contact { text-align: center; margin-top: 32px; padding-top: 20px; border-top: 1px solid #DCD5C8; font-size: 0.85em; color: #6E6A63; }
+        a { color: #5E6B3F; }
+        table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; font-size: 0.86em; }
+        th, td { border: 1px solid #DCD5C8; padding: 6px 8px; text-align: left; vertical-align: top; }
+        th { background: #E7E9DC; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>プライバシーポリシー</h1>
+        <p class="app-name">お部屋プランナー</p>
+        <p class="updated">最終更新日: 2026年11月16日</p>
+
+        <p>本プライバシーポリシーは、iOSアプリ「お部屋プランナー」（以下「本アプリ」）における利用者の情報の取り扱いについて定めるものです。本アプリは Appricot（運営者：Gota Kawano、以下「当社」）が提供します。</p>
+
+        <h2>1. おしゃれ相談で送る情報</h2>
+        <p>「部屋をおしゃれにする」（おしゃれ相談）で提案を作るときだけ、次の情報を送信します。初めて送る前に、アプリの中で確認します。この同意は、アプリの設定からいつでも取り消せます。</p>
+        <ul>
+            <li><strong>送るもの:</strong> 利用者がえらんだ部屋の写真1枚（端末で長辺1024ピクセルに縮め、撮影場所などの付帯情報を消したもの）と、質問への答え（なりたい雰囲気・予算などの選択肢）</li>
+            <li><strong>送らないもの:</strong> 名前・連絡先・自由に書いた文。部屋の図・家具の記録</li>
+            <li><strong>送り先:</strong> 当社のサーバー（Cloudflare Workers）を経由して、Google の Gemini API（有料の利用枠）に送り、提案の文を作ります</li>
+            <li><strong>目的:</strong> 部屋をおしゃれにするためのやること・足すとよい家具の提案を作るためだけに使います</li>
+        </ul>
+        <div class="highlight">
+            当社のサーバーは写真と答えを保存しません（中継と回数の管理だけを行います）。写真に人や個人の情報が写っていないか、送る前にご確認ください。写真を広告・人の識別・顔認識など、提案を作る以外の目的に使うことはありません。
+        </div>
+
+        <h2>2. 寸法の読み取りに使う写真・スクリーンショット</h2>
+        <p>「家具が置けるか確かめる」で、商品ページのスクリーンショットなどから寸法を読むときは、この端末の中で文字を読み取るだけです（Apple の Vision フレームワーク）。画像は送信せず、読み取ったあとは保存しません。</p>
+
+        <h2>3. 端末に保存する情報</h2>
+        <p>部屋の寸法・家具の配置・相談の写真と提案は、この端末の中にだけ保存します。当社は受け取りません。iPhone・iPad のバックアップの対象になります。アプリの設定の「すべての部屋と提案を削除」で、写真を含めて消せます。アプリを削除しても消えます。</p>
+
+        <h2>4. 回数の管理と不正の防止</h2>
+        <p>1日の相談の回数を数え、不正な利用を防ぐため、相談のたびに Apple の App Attest の鍵の ID と確認用のデータを当社のサーバーに送ります（初回に一度、鍵の登録のための情報も送ります）。この ID は利用者の名前やメールアドレスとは結び付けません。</p>
+        <table>
+            <tr><th>当社のサーバーに残るもの</th><th>期間</th></tr>
+            <tr><td>その日の相談の回数（鍵の ID のハッシュごと）</td><td>日本時間0時に作り直し、前の日の分は約48時間以内に消えます</td></tr>
+            <tr><td>App Attest の鍵の登録（公開鍵とカウンタ）</td><td>最後に使ってから400日で消します</td></tr>
+            <tr><td>同じ相談を二重に数えないための控え（ランダムな依頼番号）</td><td>10分</td></tr>
+            <tr><td>動作の記録（日時・回数の種類・かかった時間と費用・鍵の ID のハッシュの先頭8文字）</td><td>Cloudflare の記録の保存期間（写真・答え・提案の文・IP アドレスは記録しません）</td></tr>
+        </table>
+
+        <h2>5. 第三者への提供</h2>
+        <h3>5-1. Google（Gemini API）</h3>
+        <p>「1」の写真と答えを、当社のサーバーを経由して Google LLC の Gemini API に送ります。当社は有料の利用枠を使っており、Google は有料の利用枠で送られた内容を製品の改善に使いません。Google は、禁止された使い方の検出・防止と法令上の開示のため、送られた内容を限られた期間記録します（<a href="https://ai.google.dev/gemini-api/terms">Gemini API 追加利用規約</a>、2026年3月23日発効の版で確認）。</p>
+        <h3>5-2. Google AdMob（広告）</h3>
+        <p>プラスを購入していない場合、おしゃれ相談で提案を作る前に、利用者がボタンを押して見る動画広告（リワード広告）を Google AdMob で表示します。ほかの画面に広告は出しません。広告の配信のため、本アプリに組み込んだ AdMob SDK が次の情報を Google に送信します。写真・答え・提案・部屋の記録は AdMob と共有しません。追跡（App Tracking Transparency）の許可は求めません。そのため、広告用の識別子（IDFA）は使われません。</p>
+        <ul>
+            <li>おおよその位置情報（IP アドレスから推定）</li>
+            <li>デバイスの識別子</li>
+            <li>広告データ（表示・タップした広告など）・アプリの操作データ</li>
+            <li>クラッシュ・パフォーマンスなどの診断データ</li>
+        </ul>
+        <p>AdMob による情報の取り扱いは <a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a>と <a href="https://policies.google.com/technologies/partner-sites">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>をご確認ください。</p>
+        <h3>5-3. Apple（購入）</h3>
+        <p>「プラス」（買い切り）の購入は Apple の App Store が処理します。当社は支払いの情報を受け取りません。</p>
+        <h3>5-4. 外国にある第三者への提供</h3>
+        <p>「5-1」のとおり、写真と答えを外国にある第三者である米国の Google LLC に提供します。個人情報の保護に関する法律に基づき、次をお知らせします。</p>
+        <ul>
+            <li><strong>提供先の国:</strong> アメリカ合衆国（Google LLC。内容は Google が施設を持つ国で一時的に保存・処理されることがあります）</li>
+            <li><strong>その国の個人情報の保護に関する制度:</strong> 米国には日本の個人情報保護法に相当する連邦の包括的な法律はなく、分野ごとの連邦法や州法で個人情報が保護されています。詳しくは<a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/#gaikoku">個人情報保護委員会の情報</a>をご覧ください。</li>
+            <li><strong>提供先が講じている措置:</strong> 有料の利用枠で送られた内容を製品の改善に使わず、記録は不正利用の検出などのための限られた期間に限ります。データ処理に関する追加条項に従って処理されます。</li>
+        </ul>
+
+        <h2>6. 外部のサイト</h2>
+        <p>提案の「お店で探す」は、利用者が押したときに Safari で通販サイトの検索ページを開くだけです。開いたサイトでの情報の取り扱いは、そのサイトのポリシーに従います。本アプリは、どの商品を押したかを記録・送信しません。</p>
+
+        <h2>7. 同意の取り消し・削除・お問い合わせ</h2>
+        <ul>
+            <li>写真を送る同意は、アプリの設定の「送信の同意を取り消す」で取り消せます（次に相談するときに、もう一度確認します）。</li>
+            <li>端末の記録は、アプリの設定の「すべての部屋と提案を削除」で消せます。</li>
+            <li>当社のサーバーに残る回数の記録の削除など、本ポリシーに関するお問い合わせは <a href="mailto:contact@appricot.jp">contact@appricot.jp</a> までご連絡ください。</li>
+        </ul>
+
+        <h2>8. 改定</h2>
+        <p>本ポリシーを変更するときは、このページに掲示し、最終更新日を改めます。</p>
+
+        <div class="contact">
+            <p>運営者: Gota Kawano（Appricot）</p>
+            <p>お問い合わせ: <a href="mailto:contact@appricot.jp">contact@appricot.jp</a></p>
+            <p><a href="terms/">利用規約はこちら</a></p>
+        </div>
+    </div>
+</body>
+</html>
